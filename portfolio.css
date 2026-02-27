@@ -215,7 +215,7 @@ background-color:rgb(30, 122, 221);
 
 position: absolute;
 top: 1100px;
-right: 340px;
+right: 300px;
 border-radius: 20px;
 
 box-shadow: 0 2px 6px;
@@ -526,6 +526,7 @@ animation-duration: 1.2s;
         text-align: center;
       }
     }
+
 
 
 
