@@ -42,7 +42,7 @@ width: 60px;
 background-image: url(RGPV\ logo.png);
 background-size: cover;
 border-radius: 50%;
-
+ z-index: 2000; 
 }
 
 .options{
@@ -529,6 +529,7 @@ animation-duration: 1.2s;
         text-align: center;
       }
     }
+
 
 
 
