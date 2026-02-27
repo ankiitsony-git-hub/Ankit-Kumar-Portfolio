@@ -1,0 +1,530 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+text-transform: capitalize;
+
+
+
+
+}
+
+body{
+
+    
+ background-color: black;
+
+}
+
+
+.navbar{
+
+    height: 60px;
+    width: 100%;
+    
+
+display: flex;
+box-shadow: 0 2px 6px;
+position: static;
+top: 0px;
+
+}
+
+.logo{
+
+height: 59px;
+width: 60px;
+background-image: url(RGPV\ logo.png);
+background-size: cover;
+border-radius: 50%;
+
+}
+
+.options{
+height: 60px;
+width: 400px;
+display: flex;
+justify-content: space-between;
+position: absolute;
+right: 10px;
+top: 20px;
+transition: .2s ease-in;
+
+
+
+
+}
+
+
+a:hover{
+
+color: rgb(30, 122, 221);
+ transform: scale(1.2); 
+ cursor: pointer;
+
+}
+
+
+
+
+a{
+
+    color: white;
+    text-decoration: none;
+}
+
+
+.home{
+display: flex;
+align-items: center;
+height: 600Px;
+
+position: absolute;
+top: 50px;
+
+
+}
+
+.homeinfo{
+
+width: 900px;
+padding: 60px;
+
+
+}
+
+.homeinfo h2{
+
+    margin-top: 10px ;
+}
+
+.homeinfo p {
+
+    margin-top: 10px ;
+}
+
+
+
+
+
+.homeimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  padding: 6px;
+  background: conic-gradient(
+    rgb(66, 138, 209),
+    rgb(66, 116, 214),
+    rgb(67, 131, 226)
+  );
+  border-radius: 50%;
+
+
+  animation: rotateRing 6s linear infinite;
+}
+
+.imgitem {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(13, 13, 13);
+  border-radius: 50%;
+  overflow: hidden;         
+  display: flex;
+  justify-content: center;  
+  align-items: center;   
+  
+  top: 50px;
+}
+
+.imgitem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     }   
+
+  .allcards {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  align-items: center;
+  gap: 30px;             
+  width: 100%;
+  font-size: 20px;
+}
+
+.card:hover{
+
+color: rgb(15, 16, 16);
+ transform: scale(1.1); 
+cursor: pointer;
+}
+
+
+
+
+
+
+  .c{
+   
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+top: 600px;
+margin-top: 10px;
+flex-wrap: wrap;
+gap: 30px
+;
+position: relative;
+
+    
+  }
+
+  .card{
+display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    height: 100px;
+
+
+    width: 250px;
+background-color:rgb(30, 122, 221);
+padding: 20px;
+box-shadow: 0 2px 6px;
+border-radius: 10px;
+
+align-items: center;
+
+
+
+  }
+
+  .projects{
+
+    height: 150px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+background-color:rgb(30, 122, 221);
+
+position: absolute;
+top: 1100px;
+right: 380px;
+border-radius: 20px;
+
+box-shadow: 0 2px 6px;
+gap: 
+20px;
+
+  }
+
+  .p{
+
+height: 120px;
+width: 120px;
+
+background-color: rgb(247, 243, 243);
+color:rgb(30, 122, 221);
+border-radius: 50%;
+gap: 15px;
+display: flex;
+justify-content: center;
+padding: 10px;
+font-size: 20px;
+font-weight: bold;
+align-items: center;
+
+
+
+
+  }
+  .p:hover{
+
+color: rgb(15, 16, 16);
+ transform: scale(1.1); 
+cursor: pointer;
+}
+
+
+
+
+
+footer{
+
+height: 200px;
+width: 100%;
+background-color: black;
+box-shadow: 3px 2px 6px;
+position: absolute;
+top: 1400px;
+color:rgb(30, 122, 221);
+text-transform: none;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: none;
+
+flex-direction: column;
+
+}
+
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(40px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+
+.card {
+animation: fadeUp 0.8s ease forwards;
+opacity: 0;
+
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+
+.card::after {
+content: "";
+position: absolute;
+inset: -2px;
+border-radius: 18px;
+background: linear-gradient(
+120deg,
+transparent,
+rgba(63, 228, 184, 0.8),
+transparent
+);
+opacity: 0;
+transition: opacity 0.35s ease;
+z-index: -1;
+}
+
+.card:hover::after {
+opacity: 1;
+}
+
+
+@keyframes iconPulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.12); }
+100% { transform: scale(1); }
+}
+
+.card:hover i {
+animation: iconPulse 0.6s ease;
+}
+
+
+
+.p {
+position: relative;
+overflow: hidden;
+}
+
+.p::before {
+content: "";
+position: absolute;
+top: 0;
+left: -120%;
+width: 60%;
+height: 100%;
+background: linear-gradient(
+120deg,
+transparent,
+rgba(255, 255, 255, 0.6),
+transparent
+);
+transform: skewX(-25deg);
+transition: left 0.6s ease;
+}
+
+.p:hover::before {
+left: 130%;
+}
+
+
+
+@keyframes floatSoft {
+0% { transform: translateY(0); }
+50% { transform: translateY(-6px); }
+100% { transform: translateY(0); }
+}
+
+.p:hover {
+animation: floatSoft 1.6s ease-in-out infinite;
+}
+
+
+
+.c,
+.projects {
+animation: fadeUp 1s ease both;
+}
+
+
+
+@media (max-width: 768px) {
+.card {
+animation-duration: 0.6s;
+}
+
+.p:hover {
+animation-duration: 1.2s;
+}
+}
+
+
+
+
+
+}
+
+    .contactrow {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;       
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@keyframes rotateRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imgitem {
+  animation: rotateRing 6s linear infinite reverse;
+}
+
+.options a.active {
+  color: rgb(30, 122, 221);
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 1024px) {
+      .homeinfo {
+        width: 80%;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .options {
+        width: 300px;
+        right: 5px;
+        top: 15px;
+        font-size: 14px;
+      }
+
+      .homeimg {
+        width: 280px;
+      }
+
+      .imgitem {
+        width: 280px;
+        height: 280px;
+      }
+
+      html {
+  scroll-behavior: smooth;
+}
+
+
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+
+      .options {
+        position: static;
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+      .home {
+        flex-direction: column;
+        top: 0;
+        height: auto;
+        text-align: center;
+      }
+
+      .homeinfo {
+        padding: 20px;
+        width: 90%;
+      }
+
+      .projects {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+      }
+
+      .p {
+        width: 150px;
+        height: 80px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .options a {
+        font-size: 12px;
+      }
+
+      .homeinfo h1 {
+        font-size: 20px;
+      }
+
+      .homeinfo h2 {
+        font-size: 16px;
+      }
+
+      .homeinfo p {
+        font-size: 14px;
+      }
+
+      .card {
+        width: 180px;
+        height: auto;
+        font-size: 14px;
+      }
+
+      .projects {
+        gap: 10px;
+      }
+
+      footer {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+
+
